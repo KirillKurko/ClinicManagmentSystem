@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/CreateFunctions.cpp"
+            timestampString = "606577121.8392251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "CreateMedicalStaffEmployee()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/CreateFunctions.cpp"
+            timestampString = "606577121.8396029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "CreateMedicalStaffEmployee()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/CreateFunctions.cpp"
+            timestampString = "606577121.839679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "CreateMedicalStaffEmployee()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.839748"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.140808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.145664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.147756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.149864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.151969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "89">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.840054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.4340349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.437942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.440318"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.4439549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575912.445994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.840124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.075508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.078864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.082306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.084211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.086167"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "189">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.840225"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.7960531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.799867"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.8031631"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.8054039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "211">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575913.807821"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.84031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575915.245519"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575915.2483979"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575915.251838"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575915.253731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "238">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575915.256089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.840396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.163972"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "222">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.167676"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "222">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.17099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "222">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.1734639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "285">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.175603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "255">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.840484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.59663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.6003129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.60409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.6060849"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.608677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "279">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+            timestampString = "606577121.8406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CorrectCin()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;unsigned long&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575917.997265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;float&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575918.001367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;int&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575918.004364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Date&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575918.0068099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "337">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "decltype(auto) CorrectCin&lt;Time&gt;()"
+                  moduleName = "OOP_2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikolajkurko/Desktop/Xcode/OOP_2_3/OOP_2_3/SourceCode/Interfaces/Classes/Utilities/CorrectCin.hpp"
+                  timestampString = "606575918.008978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "301">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
