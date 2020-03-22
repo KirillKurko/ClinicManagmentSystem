@@ -185,7 +185,7 @@ vector<pair<Date, shared_ptr<Person>>> CreateAppointments(size_t numberOfAppoint
 }
 
 pair<Date, shared_ptr<Person>> CreateAppointment() {
-    cout << "Введите дату приема: ";
+    cout << "Введите дату приема: " << endl;
     auto date = CreateDate();
     cout << "Введите информацию о пациенте: " << endl;
     auto patient = make_shared<Person>(CreatePerson());

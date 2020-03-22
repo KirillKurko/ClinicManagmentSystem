@@ -94,6 +94,9 @@ Nurse& Nurse::operator= (const Nurse& other) {
 
 void Nurse::printInformation() const {
     NursingStaff::printInformation();
-    cout << "Доктор, за которым закреплена: " << endl;
-    doctor->printInformation();
+    if (doctor == nullptr) cout << "Доктор не закреплен " << endl;
+    else {
+        cout << "Доктор, за которым закреплена: " << endl;
+        doctor->printInformation();
+    }
 }

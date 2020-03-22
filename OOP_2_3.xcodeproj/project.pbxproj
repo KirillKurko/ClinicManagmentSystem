@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		981738F324275E0E00874DBA /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981738F124275E0E00874DBA /* Menu.cpp */; };
 		981738F62427957700874DBA /* LessThanZeroException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981738F42427957700874DBA /* LessThanZeroException.cpp */; };
+		981738FC2427E0D700874DBA /* RemoveMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981738FA2427E0D700874DBA /* RemoveMethods.cpp */; };
+		981738FE2427E34C00874DBA /* PrintMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981738FD2427E34C00874DBA /* PrintMethods.cpp */; };
+		981739002427E3FE00874DBA /* GetMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981738FF2427E3FE00874DBA /* GetMethods.cpp */; };
 		9888296D241DE4E000988CE9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9888296C241DE4E000988CE9 /* main.cpp */; };
 		98882976241DE4FE00988CE9 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98882974241DE4FE00988CE9 /* Time.cpp */; };
 		98882979241DEA0500988CE9 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98882977241DEA0500988CE9 /* Date.cpp */; };
@@ -17,7 +20,7 @@
 		98882983241E33B000988CE9 /* TopMedicalStaff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98882981241E33B000988CE9 /* TopMedicalStaff.cpp */; };
 		98882986241EE19900988CE9 /* MiddlleMedicalStaff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98882984241EE19900988CE9 /* MiddlleMedicalStaff.cpp */; };
 		98A825DB242538A000E4DD8C /* NursingStaff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98A825D9242538A000E4DD8C /* NursingStaff.cpp */; };
-		98A825DE2425D20400E4DD8C /* Clinic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98A825DC2425D20400E4DD8C /* Clinic.cpp */; };
+		98A825DE2425D20400E4DD8C /* MainMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98A825DC2425D20400E4DD8C /* MainMethods.cpp */; };
 		98A825E12425E95B00E4DD8C /* CreateFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98A825DF2425E95B00E4DD8C /* CreateFunctions.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		981738F224275E0E00874DBA /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 		981738F42427957700874DBA /* LessThanZeroException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LessThanZeroException.cpp; sourceTree = "<group>"; };
 		981738F52427957700874DBA /* LessThanZeroException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LessThanZeroException.hpp; sourceTree = "<group>"; };
+		981738FA2427E0D700874DBA /* RemoveMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveMethods.cpp; sourceTree = "<group>"; };
+		981738FD2427E34C00874DBA /* PrintMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrintMethods.cpp; sourceTree = "<group>"; };
+		981738FF2427E3FE00874DBA /* GetMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GetMethods.cpp; sourceTree = "<group>"; };
 		98882969241DE4E000988CE9 /* OOP_2_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_2_3; sourceTree = BUILT_PRODUCTS_DIR; };
 		9888296C241DE4E000988CE9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		98882974241DE4FE00988CE9 /* Time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; usesTabs = 1; };
@@ -54,7 +60,7 @@
 		98882985241EE19900988CE9 /* MiddlleMedicalStaff.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MiddlleMedicalStaff.hpp; sourceTree = "<group>"; usesTabs = 1; };
 		98A825D9242538A000E4DD8C /* NursingStaff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NursingStaff.cpp; sourceTree = "<group>"; };
 		98A825DA242538A000E4DD8C /* NursingStaff.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NursingStaff.hpp; sourceTree = "<group>"; };
-		98A825DC2425D20400E4DD8C /* Clinic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Clinic.cpp; sourceTree = "<group>"; };
+		98A825DC2425D20400E4DD8C /* MainMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMethods.cpp; sourceTree = "<group>"; };
 		98A825DD2425D20400E4DD8C /* Clinic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clinic.hpp; sourceTree = "<group>"; };
 		98A825DF2425E95B00E4DD8C /* CreateFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreateFunctions.cpp; sourceTree = "<group>"; };
 		98A825E02425E95B00E4DD8C /* CreateFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreateFunctions.hpp; sourceTree = "<group>"; };
@@ -77,7 +83,6 @@
 			children = (
 				981738F82427964E00874DBA /* Interfaces */,
 				98A825DD2425D20400E4DD8C /* Clinic.hpp */,
-				98A825DC2425D20400E4DD8C /* Clinic.cpp */,
 			);
 			path = SourceCode;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 				98A825E02425E95B00E4DD8C /* CreateFunctions.hpp */,
 				981738F124275E0E00874DBA /* Menu.cpp */,
 				981738F224275E0E00874DBA /* Menu.hpp */,
+				981739012427E43A00874DBA /* ClinicMethods */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -101,6 +107,17 @@
 				981738F42427957700874DBA /* LessThanZeroException.cpp */,
 			);
 			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		981739012427E43A00874DBA /* ClinicMethods */ = {
+			isa = PBXGroup;
+			children = (
+				98A825DC2425D20400E4DD8C /* MainMethods.cpp */,
+				981738FA2427E0D700874DBA /* RemoveMethods.cpp */,
+				981738FD2427E34C00874DBA /* PrintMethods.cpp */,
+				981738FF2427E3FE00874DBA /* GetMethods.cpp */,
+			);
+			path = ClinicMethods;
 			sourceTree = "<group>";
 		};
 		98882960241DE4E000988CE9 = {
@@ -217,13 +234,16 @@
 			files = (
 				98882979241DEA0500988CE9 /* Date.cpp in Sources */,
 				98A825E12425E95B00E4DD8C /* CreateFunctions.cpp in Sources */,
+				981738FE2427E34C00874DBA /* PrintMethods.cpp in Sources */,
 				98882980241DF5D800988CE9 /* MedicalStaff.cpp in Sources */,
+				981739002427E3FE00874DBA /* GetMethods.cpp in Sources */,
 				981738F62427957700874DBA /* LessThanZeroException.cpp in Sources */,
 				98882983241E33B000988CE9 /* TopMedicalStaff.cpp in Sources */,
 				98A825DB242538A000E4DD8C /* NursingStaff.cpp in Sources */,
 				981738F324275E0E00874DBA /* Menu.cpp in Sources */,
+				981738FC2427E0D700874DBA /* RemoveMethods.cpp in Sources */,
 				98882976241DE4FE00988CE9 /* Time.cpp in Sources */,
-				98A825DE2425D20400E4DD8C /* Clinic.cpp in Sources */,
+				98A825DE2425D20400E4DD8C /* MainMethods.cpp in Sources */,
 				98882986241EE19900988CE9 /* MiddlleMedicalStaff.cpp in Sources */,
 				9888297D241DF38F00988CE9 /* Person.cpp in Sources */,
 				9888296D241DE4E000988CE9 /* main.cpp in Sources */,
