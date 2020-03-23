@@ -75,6 +75,8 @@ public:
     void searchParamedics() const;
     void searchNurses() const;
     void searchPatients() const;
+    
+    void edit();
 };
 
 #endif

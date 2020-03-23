@@ -13,7 +13,8 @@ int mainMenu() {
     int selection;
     set_terminate(terminate_func);
     while (true) {
-        cout << "\n1 - Создать клинику\n2 - Просмотреть\n3 - Добавить\n4 - Удалить\n5 - Задание\n6 - Выход" << endl;
+        cout << "\n1 - Создать клинику\n2 - Просмотреть\n3 - Добавить\n4 - Удалить\n5 - Поиск"
+        << "\n6 - Редактирование\n7 - Задание\n8 - Выход" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
         switch (selection) {
@@ -52,6 +53,12 @@ int mainMenu() {
                     cout << "Сначала создайте клинику" << endl;
                     break;
                 }
+                clinic->search();
+                break;
+            case 6:
+                clinic->edit();
+                break;
+            case 7:
                 task();
                 break;
             default:
