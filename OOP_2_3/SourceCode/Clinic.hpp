@@ -4,6 +4,7 @@
 #include "Interfaces/Classes/TopMedicalStaff.hpp"
 #include "Interfaces/Classes/MiddlleMedicalStaff.hpp"
 #include "Interfaces/Classes/NursingStaff.hpp"
+#include "Interfaces/Classes/Utilities/CorrectCin.hpp"
 
 class Clinic {
 private:
@@ -67,6 +68,13 @@ public:
     void printInformationAboutParamedics() const;
     void printInformationAboutNurses() const;
     void printInformationAboutPatients() const;
+    
+    void search() const;
+    void searchDoctors() const;
+    void searchDentists() const;
+    void searchParamedics() const;
+    void searchNurses() const;
+    void searchPatients() const;
 };
 
 #endif
