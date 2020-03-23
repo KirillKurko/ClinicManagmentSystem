@@ -443,7 +443,52 @@ void editMedicalRecorder(MedicalRecorder& medicalRecorder) {
 }
 
 void editNurse(Nurse& nurse) {
-    
+    int selection;
+    string name;
+    string surname;
+    int age;
+    string education;
+    int experience;
+    float salary;
+    while (true) {
+        cout << "\n1 - Редактировать имя\n2 - Редактировать фамилию\n3 - Редактировать возраст" <<
+        "\n4 - Редактировать образование\n5 - Редактировать опыт работы\n6 - Редактировать зарплату\n7 - Назад" << endl;
+        cout << "Выберите пункт меню: ";
+        selection = CorrectCin<int>();
+        switch (selection) {
+            case 1:
+                cout << "Введите новое значение имени: ";
+                getline(cin, name);
+                nurse.setName(name);
+                break;
+            case 2:
+                cout << "Введите новое значение фамилии: ";
+                getline(cin, surname);
+                nurse.setSurname(surname);
+                break;
+            case 3:
+                cout << "Введите новое значение возраста: ";
+                age = CorrectCin<int>();
+                nurse.setAge(age);
+                break;
+            case 4:
+                cout << "Введите новое значение образования: ";
+                getline(cin, education);
+                nurse.setEducation(education);
+                break;
+            case 5:
+                cout << "Введите новое значение опыта работы: ";
+                experience = CorrectCin<int>();
+                nurse.setExperience(experience);
+                break;
+            case 6:
+                cout << "Введите новое значение зарплаты: ";
+                salary = CorrectCin<float>();
+                break;
+            default:
+                return;
+        }
+    }
 }
 
 void editPatient(std::shared_ptr<Person> patient) {
