@@ -423,7 +423,63 @@ void edit() {
 }
 
 void editChiefMedicalOfficer(ChiefMedicalOfficer& chiefMedicalOfficer) {
-    
+    int selection;
+    string name;
+    string surname;
+    int age;
+    string education;
+    int experience;
+    float salary;
+    string specialization;
+    float budget;
+    while (true) {
+        cout << "\n1 - Редактировать имя\n2 - Редактировать фамилию\n3 - Редактировать возраст" <<
+        "\n4 - Редактировать образование\n5 - Редактировать опыт работы" <<
+        "\n6 - Редактировать зарплату\n7 - Редактировать специализацию\n8 - Редактировать бюджет\n9 - Назад" << endl;
+        cout << "Выберите пункт меню: ";
+        selection = CorrectCin<int>();
+        switch (selection) {
+            case 1:
+                cout << "Введите новое значение имени: ";
+                getline(cin, name);
+                chiefMedicalOfficer.setName(name);
+                break;
+            case 2:
+                cout << "Введите новое значение фамилии: ";
+                getline(cin, surname);
+                chiefMedicalOfficer.setSurname(surname);
+                break;
+            case 3:
+                cout << "Введите новое значение возраста: ";
+                age = CorrectCin<int>();
+                chiefMedicalOfficer.setAge(age);
+                break;
+            case 4:
+                cout << "Введите новое значение образования: ";
+                getline(cin, education);
+                chiefMedicalOfficer.setEducation(education);
+                break;
+            case 5:
+                cout << "Введите новое значение опыта работы: ";
+                experience = CorrectCin<int>();
+                chiefMedicalOfficer.setExperience(experience);
+                break;
+            case 6:
+                cout << "Введите новое значение зарплаты: ";
+                salary = CorrectCin<float>();
+                break;
+            case 7:
+                cout << "Введите новое значение специализации: ";
+                getline(cin, specialization);
+                chiefMedicalOfficer.setSpecialization(specialization);
+            case 8:
+                cout << "Введите новое значение бюджета: ";
+                budget = CorrectCin<float>();
+                chiefMedicalOfficer.setBudget(budget);
+            default:
+                return;
+        }
+    }
 }
 
 void editDoctor(Doctor& doctor) {
