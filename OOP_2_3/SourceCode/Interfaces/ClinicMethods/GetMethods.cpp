@@ -2,7 +2,11 @@
 
 using namespace std;
 
-Doctor Clinic::getDoctor(size_t index) {
+ChiefMedicalOfficer& Clinic::getChiefMedicalOfficer() {
+    return chiefMedicalOfficer;
+}
+
+Doctor& Clinic::getDoctor(size_t index) {
     try {
         if (index < 0 || index >= doctors.size()) throw 1;
         return doctors[index];
@@ -11,10 +15,10 @@ Doctor Clinic::getDoctor(size_t index) {
         cout << "Ошибка! Индекс вне диапазона" << endl;
         throw;
     }
-    return Doctor();
+    return *(new Doctor());
 }
 
-Dentist Clinic::getDentist(size_t index) {
+Dentist& Clinic::getDentist(size_t index) {
     try {
         if (index < 0 || index >= dentists.size()) throw 1;
         return dentists[index];
@@ -23,10 +27,10 @@ Dentist Clinic::getDentist(size_t index) {
         cout << "Ошибка! Индекс вне диапазона" << endl;
         throw;
     }
-    return Dentist();
+    return *(new Dentist());
 }
 
-Paramedic Clinic::getParamedic(size_t index) {
+Paramedic& Clinic::getParamedic(size_t index) {
     try {
         if (index < 0 || index >= paramedics.size()) throw 1;
         return paramedics[index];
@@ -35,10 +39,14 @@ Paramedic Clinic::getParamedic(size_t index) {
         cout << "Ошибка! Индекс вне диапазона" << endl;
         throw;
     }
-    return Paramedic();
+    return *(new Paramedic());
 }
 
-Nurse Clinic::getNurse(size_t index) {
+MedicalRecorder& Clinic::getMedicalRecorder() {
+    return medicalRecorder;
+}
+
+Nurse& Clinic::getNurse(size_t index) {
     try {
         if (index < 0 || index >= nurses.size()) throw 1;
         return nurses[index];
@@ -47,7 +55,7 @@ Nurse Clinic::getNurse(size_t index) {
         cout << "Ошибка! Индекс вне диапазона" << endl;
         throw;
     }
-    return Nurse();
+    return *(new Nurse());
 }
 
 std::shared_ptr<Person> Clinic::getPatient(size_t index) {

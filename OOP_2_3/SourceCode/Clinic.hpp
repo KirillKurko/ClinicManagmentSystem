@@ -44,10 +44,12 @@ public:
     void setMedicalRecorder(MedicalRecorder medicalRecorder);
     void setPatients(std::vector<std::shared_ptr<Person>> patients);
     
-    Doctor getDoctor(size_t index);
-    Dentist getDentist(size_t index);
-    Paramedic getParamedic(size_t index);
-    Nurse getNurse(size_t index);
+    ChiefMedicalOfficer& getChiefMedicalOfficer();
+    Doctor& getDoctor(size_t index);
+    Dentist& getDentist(size_t index);
+    Paramedic& getParamedic(size_t index);
+    Nurse& getNurse(size_t index);
+    MedicalRecorder& getMedicalRecorder();
     std::shared_ptr<Person> getPatient(size_t index);
     
     void addDoctor(Doctor doctor);
@@ -68,15 +70,6 @@ public:
     void printInformationAboutParamedics() const;
     void printInformationAboutNurses() const;
     void printInformationAboutPatients() const;
-    
-    void search() const;
-    void searchDoctors() const;
-    void searchDentists() const;
-    void searchParamedics() const;
-    void searchNurses() const;
-    void searchPatients() const;
-    
-    void edit();
 };
 
 #endif
