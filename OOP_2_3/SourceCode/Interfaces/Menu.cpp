@@ -447,7 +447,34 @@ void editNurse(Nurse& nurse) {
 }
 
 void editPatient(std::shared_ptr<Person> patient) {
-    
+    int selection;
+    string name;
+    string surname;
+    int age;
+    while (true) {
+        cout << "\n1 - Редактировать имя\n2 - Редактировать фамилию\n3 - Редактировать возраст\n4 - Назад" << endl;
+        cout << "Выберите пункт меню: ";
+        selection = CorrectCin<int>();
+        switch (selection) {
+            case 1:
+                cout << "Введите новое значение имени: ";
+                getline(cin, name);
+                patient->setName(name);
+                break;
+            case 2:
+                cout << "Введите новое значение фамилии: ";
+                getline(cin, surname);
+                patient->setSurname(surname);
+                break;
+            case 3:
+                cout << "Введите новое значение возраста: ";
+                age = CorrectCin<int>();
+                patient->setAge(age);
+                break;
+            default:
+                return;
+        }
+    }
 }
 
 void task() {
