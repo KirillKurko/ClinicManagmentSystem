@@ -435,7 +435,58 @@ void editDentist(Dentist& dentist) {
 }
 
 void editParamedic(Paramedic& paramedic) {
-    
+    int selection;
+    string name;
+    string surname;
+    int age;
+    string education;
+    int experience;
+    float salary;
+    string region;
+    while (true) {
+        cout << "\n1 - Редактировать имя\n2 - Редактировать фамилию\n3 - Редактировать возраст" <<
+        "\n4 - Редактировать образование\n5 - Редактировать опыт работы" <<
+        "\n6 - Редактировать зарплату\n7 - Редактировать регион\n8 - Назад" << endl;
+        cout << "Выберите пункт меню: ";
+        selection = CorrectCin<int>();
+        switch (selection) {
+            case 1:
+                cout << "Введите новое значение имени: ";
+                getline(cin, name);
+                paramedic.setName(name);
+                break;
+            case 2:
+                cout << "Введите новое значение фамилии: ";
+                getline(cin, surname);
+                paramedic.setSurname(surname);
+                break;
+            case 3:
+                cout << "Введите новое значение возраста: ";
+                age = CorrectCin<int>();
+                paramedic.setAge(age);
+                break;
+            case 4:
+                cout << "Введите новое значение образования: ";
+                getline(cin, education);
+                paramedic.setEducation(education);
+                break;
+            case 5:
+                cout << "Введите новое значение опыта работы: ";
+                experience = CorrectCin<int>();
+                paramedic.setExperience(experience);
+                break;
+            case 6:
+                cout << "Введите новое значение зарплаты: ";
+                salary = CorrectCin<float>();
+                break;
+            case 7:
+                cout << "Введите новое значение закрепленного региона: ";
+                getline(cin, region);
+                paramedic.setRegion(region);
+            default:
+                return;
+        }
+    }
 }
 
 void editMedicalRecorder(MedicalRecorder& medicalRecorder) {
