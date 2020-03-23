@@ -40,8 +40,48 @@ void Clinic::searchDentists() const {
 void Clinic::searchParamedics() const {
     
 }
+
 void Clinic::searchNurses() const {
-    
+    int selection;
+    string name;
+    string surname;
+    int age;
+    while (true) {
+        cout << "\n1 - Поиск по имени\n2 - Поиск по фамилии\n3 - Поиск по возрасту\n4 - Назад" << endl;
+        cout << "Выберите критерий поиска: ";
+        selection = CorrectCin<int>();
+        switch (selection) {
+            case 1:
+                cout << "Введите имя: ";
+                getline(cin, name);
+                for (auto& nurse: nurses) {
+                    if (nurse.getName() == name)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            case 2:
+                cout << "Введите фамилию: ";
+                getline(cin, surname);
+                for (auto& nurse: nurses) {
+                    if (nurse.getSurname() == surname)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            case 3:
+                cout << "Введите возраст: ";
+                age = CorrectCin<int>();
+                for (auto& nurse: nurses) {
+                    if (nurse.getAge() == age)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            default:
+                return;
+        }
+    }
 }
 void Clinic::searchPatients() const {
     int selection;
@@ -57,7 +97,7 @@ void Clinic::searchPatients() const {
                 cout << "Введите имя: ";
                 getline(cin, name);
                 for (auto& patient: patients) {
-                    if (patient->getName() == surname)
+                    if (patient->getName() == name)
                         patient->printInformation();
                     cout << "\n";
                 }
