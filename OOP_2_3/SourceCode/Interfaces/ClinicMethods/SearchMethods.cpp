@@ -45,9 +45,13 @@ void Clinic::searchNurses() const {
     int selection;
     string name;
     string surname;
+    string education;
+    int experience;
+    float salary;
     int age;
     while (true) {
-        cout << "\n1 - Поиск по имени\n2 - Поиск по фамилии\n3 - Поиск по возрасту\n4 - Назад" << endl;
+        cout << "\n1 - Поиск по имени\n2 - Поиск по фамилии\n3 - Поиск по возрасту" <<
+        "\n4 - Поиск по образованию\n5 - Поиск по опыту работы\n6 - Поиск по зарплате\n7 - Назад" << endl;
         cout << "Выберите критерий поиска: ";
         selection = CorrectCin<int>();
         switch (selection) {
@@ -74,6 +78,33 @@ void Clinic::searchNurses() const {
                 age = CorrectCin<int>();
                 for (auto& nurse: nurses) {
                     if (nurse.getAge() == age)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            case 4:
+                cout << "Введите образованиие: ";
+                getline(cin, education);
+                for (auto& nurse: nurses) {
+                    if (nurse.getEducation() == education)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            case 5:
+                cout << "Введите опыт работы: ";
+                experience = CorrectCin<int>();
+                for (auto& nurse: nurses) {
+                    if (nurse.getExperince() == experience)
+                        nurse.printInformation();
+                    cout << "\n";
+                }
+                break;
+            case 6:
+                cout << "Введите зарплату: ";
+                salary = CorrectCin<float>();
+                for (auto& nurse: nurses) {
+                    if (nurse.getSalary() == salary)
                         nurse.printInformation();
                     cout << "\n";
                 }
