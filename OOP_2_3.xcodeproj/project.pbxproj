@@ -50,6 +50,7 @@
 		982EE5D124288A5E0077494B /* SearchMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SearchMenu.cpp; sourceTree = "<group>"; };
 		982EE5D324288AF40077494B /* EditMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EditMenu.cpp; sourceTree = "<group>"; };
 		982EE5D924288FE30077494B /* ViewMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ViewMenu.cpp; sourceTree = "<group>"; };
+		9836CD78242C74AB0052F6CF /* FileLogger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileLogger.hpp; sourceTree = "<group>"; };
 		98882969241DE4E000988CE9 /* OOP_2_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_2_3; sourceTree = BUILT_PRODUCTS_DIR; };
 		9888296C241DE4E000988CE9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		98882974241DE4FE00988CE9 /* Time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; usesTabs = 1; };
@@ -170,6 +171,7 @@
 				98882974241DE4FE00988CE9 /* Time.cpp */,
 				98882977241DEA0500988CE9 /* Date.cpp */,
 				98A825E22425EB9900E4DD8C /* CorrectCin.hpp */,
+				9836CD78242C74AB0052F6CF /* FileLogger.hpp */,
 				981738F92427969500874DBA /* Exceptions */,
 			);
 			path = Utilities;
