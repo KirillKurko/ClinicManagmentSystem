@@ -2,6 +2,8 @@
 
 using namespace std;
 
+extern Logger::FileLogger logger;
+
 Paramedic::Paramedic(string name, string surname,
         int age, string education,
         int experience, float salary,
@@ -50,6 +52,7 @@ void Paramedic::removeAppointment(size_t index) {
         appointments.erase(appointments.begin() + index);
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
 }
@@ -60,6 +63,7 @@ std::pair<Date, std::shared_ptr<Person>> Paramedic::getAppointment(size_t index)
         return appointments[index];
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
     return pair<Date, shared_ptr<Person>>();
@@ -78,6 +82,7 @@ void Paramedic::editAppointmentDate(size_t index) {
 		appointments[index].first = date;
 	}
 	catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
 		cout << "Ошибка! Индекс вне диапазона" << endl;
 	}
 }
@@ -156,6 +161,7 @@ void Dentist::removeAppointment(size_t index) {
         appointments.erase(appointments.begin() + index);
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
 }
@@ -166,6 +172,7 @@ pair<Date, shared_ptr<Person>> Dentist::getAppointment(size_t index) {
         return appointments[index];
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекст вне диапазона" << endl;
     }
     return pair<Date, shared_ptr<Person>>();
@@ -184,6 +191,7 @@ void Dentist::editAppointmentDate(size_t index) {
 		appointments[index].first = date;
 	}
 	catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
 		cout << "Ошибка! Индекс вне диапазона" << endl;
 	}
 }

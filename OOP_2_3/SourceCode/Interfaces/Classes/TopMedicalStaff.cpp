@@ -2,6 +2,8 @@
 
 using namespace std;
 
+extern Logger::FileLogger logger;
+
 ChiefMedicalOfficer::ChiefMedicalOfficer(string name, string surname,
                     int age, string education,
                     int experience, float salary,
@@ -97,6 +99,7 @@ void Doctor::removePatient(size_t index) {
         patients.erase(patients.begin() + index);
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
 }
@@ -107,6 +110,7 @@ shared_ptr<Person> Doctor::getPatient(size_t index) {
         return patients[index];
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
     return nullptr;
@@ -127,6 +131,7 @@ void Doctor::removeAppointment(size_t index) {
         appointments.erase(appointments.begin() + index);
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
 }
@@ -137,6 +142,7 @@ pair<Date, shared_ptr<Person>> Doctor::getAppointment(size_t index) {
         return appointments[index];
     }
     catch (int) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
     return pair<Date, shared_ptr<Person>>();

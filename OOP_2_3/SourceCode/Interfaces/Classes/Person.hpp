@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Utilities/Exceptions/LessThanZeroException.hpp"
+#include "Utilities/FileLogger.hpp"
 
 class Person {
 protected:

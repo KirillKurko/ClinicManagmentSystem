@@ -2,6 +2,8 @@
 
 using namespace std;
 
+extern Logger::FileLogger logger;
+
 MedicalRecorder::MedicalRecorder(string name, string surname,
                 int age, string education,
                 int experience, float salary,
@@ -37,6 +39,7 @@ void MedicalRecorder::removeAppointment(size_t index) {
         appointments.erase(appointments.begin() + index);
     }
     catch (int) {
+        logger << make_pair(Logger::FileLogger::LOG_ERROR, "Ошибка! Индекс вне диапазона");
         cout << "Ошибка! Индекс вне диапазона" << endl;
     }
 }
