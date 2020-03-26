@@ -54,8 +54,8 @@ void MedicalRecorder::printInformation() const {
         cout << "Приемы: ";
         for (size_t i = 0; i < appointments.size(); ++i) {
             cout << i + 1 << ") " << endl <<
-            "Лечащий врач: " << appointments[i].first <<
-            "Дата: " << appointments[i].second.first <<
+            "Лечащий врач: " << appointments[i].first << endl <<
+            "Дата: " << appointments[i].second.first << endl << 
             "Пациент: " << endl;
             appointments[i].second.second->printInformation();
         }

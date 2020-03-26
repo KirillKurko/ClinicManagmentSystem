@@ -92,6 +92,7 @@ int mainMenu() {
 }
 
 void add() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции добавления");
     int selection;
     while (true) {
         cout << "\n1 - Врач\n2 - Стоматолог\n3 - Фельдшер\n4 - Медсестра\n5 - Пациент\n6 - Назад" << endl;
@@ -115,6 +116,7 @@ void add() {
                 clinic->addPatient(make_shared<Person>(CreatePerson()));
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Добавление завершено");
                 cout << "Добавление завершено" << endl;
                 return;
         }
@@ -122,6 +124,7 @@ void add() {
 }
 
 void remove() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции удаления");
     int selection;
     size_t index;
     while (true) {
@@ -133,61 +136,73 @@ void remove() {
             case 1:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     clinic->removeDoctor(index);
                 }
                 catch (...) {
                     cout << "Невозможно выполнить операцию" << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                 }
                 break;
             case 2:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     clinic->removeDentist(index);
                 }
                 catch (...) {
                     cout << "Невозможно выполнить операцию" << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                 }
                 break;
             case 3:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     clinic->removeParamedic(index);
                 }
                 catch (...) {
                     cout << "Невозможно выполнить операцию" << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                 }
                 break;
             case 4:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     clinic->removeNurse(index);
                 }
                 catch (...) {
                     cout << "Невозможно выполнить операцию" << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                 }
                 break;
             case 5:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     clinic->removePatient(index);
                 }
                 catch (...) {
                     cout << "Невозможно выполнить операцию" << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                 }
                 break;
             default:
                 cout << "Удаление завершено" << endl;
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Удаление завершено");
                 return;
         }
     }
 }
 
 void task() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции задания");
     int input = 0;
     cout << "Вопрос: для чего необходимо использовать абсолютный обработчик?" << endl
     << "Чтобы просмотреть ответ нажмите 1: ";
@@ -197,5 +212,6 @@ void task() {
         input = CorrectCin<int>();
     }
     cout << "Ответ: абсолютный обработчик используемя для перехвата исключений любых типов" << endl;
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "Выход из функции задания");
     return;
 }

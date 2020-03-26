@@ -3,8 +3,10 @@
 using namespace std;
 
 extern Clinic* clinic;
+extern Logger::FileLogger logger;
 
 void edit() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования");
     int selection;
     size_t index;
     while (true) {
@@ -12,6 +14,7 @@ void edit() {
         "\n5 - Медрегистратор\n6 - Медсестра\n7 - Пациент\n8 - Выход" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 editChiefMedicalOfficer(clinic->getChiefMedicalOfficer());
@@ -19,64 +22,77 @@ void edit() {
             case 2:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editDoctor(clinic->getDoctor(index));
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             case 3:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editDentist(clinic->getDentist(index));
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             case 4:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editParamedic(clinic->getParamedic(index));
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             case 5:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editMedicalRecorder(clinic->getMedicalRecorder());
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             case 6:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editNurse(clinic->getNurse(index));
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             case 7:
                 cout << "Введите индекс: ";
                 index = CorrectCin<int>();
+                logger << make_pair(Logger::FileLogger::LOG_INFO, string("Введен индекс: " + to_string(index)));
                 try {
                     editPatient(clinic->getPatient(index));
                 }
                 catch (...) {
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, "Невозможно выполнить операцию");
                     cout << "Невозможно выполнить операцию" << endl;
                 }
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование завершено");
                 cout << "Редактирование завершено" << endl;
                 return;
         }
@@ -84,6 +100,7 @@ void edit() {
 }
 
 void editChiefMedicalOfficer(ChiefMedicalOfficer& chiefMedicalOfficer) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования главврача");
     int selection;
     string name;
     string surname;
@@ -99,6 +116,7 @@ void editChiefMedicalOfficer(ChiefMedicalOfficer& chiefMedicalOfficer) {
         "\n6 - Редактировать зарплату\n7 - Редактировать специализацию\n8 - Редактировать бюджет\n9 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -140,12 +158,14 @@ void editChiefMedicalOfficer(ChiefMedicalOfficer& chiefMedicalOfficer) {
                 chiefMedicalOfficer.setBudget(budget);
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование главврача завершено");
                 return;
         }
     }
 }
 
 void editDoctor(Doctor& doctor) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования доктора");
     int selection;
     string name;
     string surname;
@@ -160,6 +180,7 @@ void editDoctor(Doctor& doctor) {
         "\n6 - Редактировать зарплату\n7 - Редактировать специализацию\n8 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -196,12 +217,14 @@ void editDoctor(Doctor& doctor) {
                 doctor.setSpecialization(specialization);
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование врача завершено");
                 return;
         }
     }
 }
 
 void editDentist(Dentist& dentist) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования стоматолога");
     int selection;
     string name;
     string surname;
@@ -214,6 +237,7 @@ void editDentist(Dentist& dentist) {
         "\n4 - Редактировать образование\n5 - Редактировать опыт работы\n6 - Редактировать зарплату\n7 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -245,12 +269,14 @@ void editDentist(Dentist& dentist) {
                 salary = CorrectCin<float>();
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактиорование стоматолога заверешено");
                 return;
         }
     }
 }
 
 void editParamedic(Paramedic& paramedic) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования фельдшера");
     int selection;
     string name;
     string surname;
@@ -265,6 +291,7 @@ void editParamedic(Paramedic& paramedic) {
         "\n6 - Редактировать зарплату\n7 - Редактировать регион\n8 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -300,12 +327,14 @@ void editParamedic(Paramedic& paramedic) {
                 getline(cin, region);
                 paramedic.setRegion(region);
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование фельдшера завеершено");
                 return;
         }
     }
 }
 
 void editMedicalRecorder(MedicalRecorder& medicalRecorder) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования медрегистратора");
     int selection;
     string name;
     string surname;
@@ -318,6 +347,7 @@ void editMedicalRecorder(MedicalRecorder& medicalRecorder) {
         "\n4 - Редактировать образование\n5 - Редактировать опыт работы\n6 - Редактировать зарплату\n7 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -349,12 +379,14 @@ void editMedicalRecorder(MedicalRecorder& medicalRecorder) {
                 salary = CorrectCin<float>();
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование медрегистратора завершено");
                 return;
         }
     }
 }
 
 void editNurse(Nurse& nurse) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования медсестры");
     int selection;
     string name;
     string surname;
@@ -367,6 +399,7 @@ void editNurse(Nurse& nurse) {
         "\n4 - Редактировать образование\n5 - Редактировать опыт работы\n6 - Редактировать зарплату\n7 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -398,12 +431,14 @@ void editNurse(Nurse& nurse) {
                 salary = CorrectCin<float>();
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование медсестры завершено");
                 return;
         }
     }
 }
 
 void editPatient(std::shared_ptr<Person> patient) {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции редактирования пациента");
     int selection;
     string name;
     string surname;
@@ -412,6 +447,7 @@ void editPatient(std::shared_ptr<Person> patient) {
         cout << "\n1 - Редактировать имя\n2 - Редактировать фамилию\n3 - Редактировать возраст\n4 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите новое значение имени: ";
@@ -429,6 +465,7 @@ void editPatient(std::shared_ptr<Person> patient) {
                 patient->setAge(age);
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Редактирование пациента завершено");
                 return;
         }
     }

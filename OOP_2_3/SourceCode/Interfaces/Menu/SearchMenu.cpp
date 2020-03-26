@@ -1,15 +1,18 @@
 #include "Menu.hpp"
 
 extern Clinic* clinic;
+extern Logger::FileLogger logger;
 
 using namespace std;
 
 void search() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции поиска");
     int selection;
     while (true) {
         cout << "\n1 - Врачи\n2 - Стоматологи\n3 - Фельдшеры\n4 - Медсестры\n5 - Пациенты\n6 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection =  CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 searchDoctors();
@@ -27,6 +30,7 @@ void search() {
                 searchPatients();
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Поиск завершен");
                 cout << "Поиск завершен" << endl;
                 return;
         }
@@ -34,6 +38,7 @@ void search() {
 }
 
 void searchDoctors() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции поиска врачей");
     auto doctors = clinic->getDoctors();
     int selection;
     string name;
@@ -51,6 +56,7 @@ void searchDoctors() {
         << "\n7 - Поиск по специализации\n8 - Поиск по количеству вылеченных людей\n8 - Назад" << endl;
         cout << "Выберите критерий поиска: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         found = false;
         switch (selection) {
             case 1:
@@ -150,12 +156,14 @@ void searchDoctors() {
                 if (!found) cout << "Нет докторов с данным количеством вылеченных людей" << endl;
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Поиск врачей завершен");
                 return;
         }
     }
 }
 
 void searchDentists() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции поиска стоматологов");
     auto dentists = clinic->getDentists();
     int selection;
     string name;
@@ -170,6 +178,7 @@ void searchDentists() {
         "\n4 - Поиск по образованию\n5 - Поиск по опыту работы\n6 - Поиск по зарплате\n7 - Назад" << endl;
         cout << "Выберите критерий поиска: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         found = false;
         switch (selection) {
             case 1:
@@ -267,6 +276,7 @@ void searchParamedics() {
         << "\n7 - Поиск по закрепленному региону\n8 - Назад" << endl;
         cout << "Выберите критерий поиска: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         found = false;
         switch (selection) {
             case 1:
@@ -449,11 +459,13 @@ void searchNurses() {
                 if (!found) cout << "Нет медсестер с данной зарплатой" << endl;
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Поиск стоматологов завершен");
                 return;
         }
     }
 }
 void searchPatients() {
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции поиска пациентов");
     auto patients = clinic->getPatients();
     int selection;
     string name;
@@ -464,6 +476,7 @@ void searchPatients() {
         cout << "\n1 - Поиск по имени\n2 - Поиск по фамилии\n3 - Поиск по возрасту\n4 - Назад" << endl;
         cout << "Выберите критерий поиска: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         found = false;
         switch (selection) {
             case 1:
@@ -503,6 +516,7 @@ void searchPatients() {
                 if (!found) cout << "Нет пациентов данного возраста" << endl;
                 break;
             default:
+                logger << make_pair(Logger::FileLogger::LOG_INFO, "Поиск пациентов завершен");
                 return;
         }
     }
