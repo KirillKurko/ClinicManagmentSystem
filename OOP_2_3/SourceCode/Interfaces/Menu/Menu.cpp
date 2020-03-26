@@ -84,7 +84,7 @@ int mainMenu() {
             default:
                 string message = "Работа завершена";
                 cout << message << endl;
-                logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
+                logger << make_pair(Logger::FileLogger::LOG_INFO, message);
                 delete clinic;
                 return 0;
         }
@@ -92,7 +92,7 @@ int mainMenu() {
 }
 
 void add() {
-    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции добавления");
+    logger << make_pair(Logger::FileLogger::LOG_INFO, "В функции добавления ");
     int selection;
     while (true) {
         cout << "\n1 - Врач\n2 - Стоматолог\n3 - Фельдшер\n4 - Медсестра\n5 - Пациент\n6 - Назад" << endl;
