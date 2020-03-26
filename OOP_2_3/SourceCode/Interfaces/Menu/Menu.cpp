@@ -3,6 +3,7 @@
 using namespace std;
 
 Clinic* clinic = nullptr;
+extern Logger::FileLogger logger;
 
 void terminate_func() {
     cout << "Собственная функция завершения: возникло необработанное исключение" << endl;
@@ -10,7 +11,8 @@ void terminate_func() {
 }
 
 int mainMenu() {
-    Logger::FileLogger logger;
+   
+    logger << std::make_pair(Logger::FileLogger::LOG_ERROR, string("TEST"));
     int selection;
     set_terminate(terminate_func);
     while (true) {

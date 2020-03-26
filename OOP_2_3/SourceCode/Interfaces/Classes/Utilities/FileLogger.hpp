@@ -44,6 +44,23 @@ namespace Logger {
             }
         }
         
+        friend FileLogger& operator<< (FileLogger& logger, std::pair<const log_type, std::string> message) {
+            auto [type, text] = message;
+            switch (type) {
+                case FileLogger::LOG_ERROR:
+                    logger.file << "[ERROR]: " << text << std::endl;
+                    logger.errorsCount++;
+                    break;
+                case FileLogger::LOG_WARNING:
+                    logger.file << "[WARNING]: " << text << std::endl;
+                    logger.warningsCount++;
+                    break;
+                case FileLogger::LOG_INFO: default:
+                    logger.file << "[INFO]: " << text << std::endl;
+            }
+            return logger;
+        }
+        
     };
 }
 
