@@ -6,13 +6,13 @@ Clinic* clinic = nullptr;
 extern Logger::FileLogger logger;
 
 void terminate_func() {
-    cout << "Собственная функция завершения: возникло необработанное исключение" << endl;
+    string message = "Собственная функция завершения: возникло необработанное исключение";
+    cout << message << endl;
+    logger << make_pair(Logger::FileLogger::LOG_ERROR, message);
     exit(-1);
 }
 
 int mainMenu() {
-   
-    logger << std::make_pair(Logger::FileLogger::LOG_ERROR, string("TEST"));
     int selection;
     set_terminate(terminate_func);
     while (true) {
@@ -20,6 +20,7 @@ int mainMenu() {
         << "\n6 - Редактирование\n7 - Задание\n8 - Выход" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 try {
@@ -27,40 +28,52 @@ int mainMenu() {
                     if (!(clinic = new Clinic(CreateClinic()))) throw bad_alloc();
                 }
                 catch (bad_alloc exception) {
-                    cout << "Ошибка создания клиники: " << exception.what() << endl;
+                    string message = "Ошибка создания клиники: " + string(exception.what());
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_ERROR, message);
                 }
                 break;
             case 2:
                 if (clinic == nullptr) {
-                    cout << "Сначала создайте клинику" << endl;
+                    string message = "Сначала создайте клинику";
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                     break;
                 }
                 viewMenu();
                 break;
             case 3:
                 if (clinic == nullptr) {
-                    cout << "Сначала создайте клинику" << endl;
+                    string message = "Сначала создайте клинику";
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                     break;
                 }
                 add();
                 break;
             case 4:
                 if (clinic == nullptr) {
-                    cout << "Сначала создайте клинику" << endl;
+                    string message = "Сначала создайте клинику";
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                     break;
                 }
                 remove();
                 break;
             case 5:
                 if (clinic == nullptr) {
-                    cout << "Сначала создайте клинику" << endl;
+                    string message = "Сначала создайте клинику";
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                     break;
                 }
                 search();
                 break;
             case 6:
                 if (clinic == nullptr) {
-                    cout << "Сначала создайте клинику" << endl;
+                    string message = "Сначала создайте клинику";
+                    cout << message << endl;
+                    logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                     break;
                 }
                 edit();
@@ -69,7 +82,9 @@ int mainMenu() {
                 task();
                 break;
             default:
-                cout << "Работа завершена" << endl;
+                string message = "Работа завершена";
+                cout << message << endl;
+                logger << make_pair(Logger::FileLogger::LOG_WARNING, message);
                 delete clinic;
                 return 0;
         }
@@ -82,6 +97,7 @@ void add() {
         cout << "\n1 - Врач\n2 - Стоматолог\n3 - Фельдшер\n4 - Медсестра\n5 - Пациент\n6 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 clinic->addDoctor(CreateDoctor());
@@ -112,6 +128,7 @@ void remove() {
         cout << "\n1 - Врач\n2 - Стоматолог\n3 - Фельдшер\n4 - Медсестра\n5 - Пациент\n6 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
+        logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
         switch (selection) {
             case 1:
                 cout << "Введите индекс: ";

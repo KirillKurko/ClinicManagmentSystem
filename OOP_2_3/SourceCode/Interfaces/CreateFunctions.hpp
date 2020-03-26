@@ -3,6 +3,7 @@
 
 #include "Clinic.hpp"
 #include "Classes/Utilities/CorrectCin.hpp"
+#include "Classes/Utilities/FileLogger.hpp"
 
 Clinic CreateClinic();
 

@@ -5,6 +5,7 @@
 #include "Interfaces/Classes/MiddlleMedicalStaff.hpp"
 #include "Interfaces/Classes/NursingStaff.hpp"
 #include "Interfaces/Classes/Utilities/CorrectCin.hpp"
+#include "Interfaces/Classes/Utilities/FileLogger.hpp"
 
 class Clinic {
 private:

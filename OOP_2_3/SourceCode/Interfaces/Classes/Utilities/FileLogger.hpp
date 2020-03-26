@@ -36,8 +36,8 @@ namespace Logger {
         
         ~FileLogger() {
             if (file.is_open()) {
-                file << "\n" << warningsCount << " warnings" << std::endl;
-                file << errorsCount << " errors" << std::endl;
+                file << "\n" << warningsCount << " warnings per session" << std::endl;
+                file << errorsCount << " errors per session" << std::endl;
                 file << "Logging finished" << std::endl << getLogTime() << "\n\n";
                 
                 file.close();
