@@ -30,10 +30,19 @@ namespace Logger {
             
             file.open(filename, std::ios_base::app);
             if (file.is_open()) {
-                file << "Log file created" << std::endl << getLogTime() << "\n";
+                file << "Logging started" << std::endl << getLogTime() << "\n";
             }
         }
         
+        ~FileLogger() {
+            if (file.is_open()) {
+                file << "\n" << warningsCount << " warnings" << std::endl;
+                file << errorsCount << " errors" << std::endl;
+                file << "Logging finished" << std::endl << getLogTime() << "\n\n";
+                
+                file.close();
+            }
+        }
         
     };
 }
