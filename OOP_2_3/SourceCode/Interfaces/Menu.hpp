@@ -2,6 +2,7 @@
 #define Menu_hpp
 
 #include "CreateFunctions.hpp"
+#include "Classes/Utilities/FileLogger.hpp"
 
 int mainMenu();
 

@@ -10,6 +10,7 @@ void terminate_func() {
 }
 
 int mainMenu() {
+    Logger::FileLogger logger;
     int selection;
     set_terminate(terminate_func);
     while (true) {
