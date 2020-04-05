@@ -24,7 +24,7 @@ namespace FileSystemManager {
         MedicalRecorder loadMedicalRecorder();
         std::vector<std::shared_ptr<Person>> loadPatients();
         
-        void saveChiefMedicalOfficer();
+        void saveChiefMedicalOfficer(const ChiefMedicalOfficer& chiefMedicalOfficer);
         void saveDoctors(const std::vector<Doctor> doctors);
         void saveDentsts(const std::vector<Dentist>& dentists);
         void saveParamedics(const std::vector<Paramedic>& paramedics);
