@@ -28,6 +28,9 @@ int mainMenu() {
                     if (clinic != nullptr) throw -1;
                     if (!(clinic = new Clinic(CreateClinic()))) throw bad_alloc();
                 }
+                catch (int) {
+                    cout << "Клиника уже создана" << endl;
+                }
                 catch (bad_alloc exception) {
                     string message = "Ошибка создания клиники: " + string(exception.what());
                     cout << message << endl;
@@ -87,6 +90,7 @@ int mainMenu() {
                 break;
             case 9:
                 load();
+                break;
             default:
                 string message = "Работа завершена";
                 cout << message << endl;
@@ -229,5 +233,5 @@ void save() {
 void load() {
     if (clinic != nullptr)
         delete clinic;
-    fileSystemManager.loadClinic();
+    clinic = fileSystemManager.loadClinic();
 }

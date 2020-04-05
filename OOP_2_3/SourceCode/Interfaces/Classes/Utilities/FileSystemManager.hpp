@@ -42,7 +42,7 @@ namespace FileSystemManager {
                           std::string medicalRecorderFilename,
                           std::string patientsFilename);
         
-        Clinic loadClinic();
+        Clinic* loadClinic();
         void saveClinic(const Clinic& clinic);
     };
 }

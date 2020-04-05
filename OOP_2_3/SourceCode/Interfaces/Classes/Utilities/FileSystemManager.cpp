@@ -24,7 +24,7 @@ FileSystemManager::FileSystemManager::FileSystemManager(string chiefMedicalOffic
     this->patientsFilename = patientsFilename;
 }
 
-Clinic FileSystemManager::FileSystemManager::loadClinic() {
+Clinic* FileSystemManager::FileSystemManager::loadClinic() {
     auto chiefMedicalOfficer = loadChiefMedicalOfficer();
     auto doctors = loadDoctors();
     auto dentists = loadDentists();
@@ -32,7 +32,7 @@ Clinic FileSystemManager::FileSystemManager::loadClinic() {
     auto nurses = loadNurses();
     auto medicalRecorder = loadMedicalRecorder();
     auto patients = loadPatients();
-    return Clinic(chiefMedicalOfficer, doctors, dentists, paramedics, nurses, medicalRecorder, patients);
+    return new Clinic(chiefMedicalOfficer, doctors, dentists, paramedics, nurses, medicalRecorder, patients);
 }
 
 void FileSystemManager::FileSystemManager::saveClinic(const Clinic& clinic) {
@@ -162,7 +162,7 @@ void FileSystemManager::FileSystemManager::saveChiefMedicalOfficer(const ChiefMe
     file.open(chiefMedicalOfficerFilename, ios_base::out);
     if (file.is_open()) {
         file << chiefMedicalOfficer.getName() << " " << chiefMedicalOfficer.getSurname() << " " << chiefMedicalOfficer.getAge() << " " <<
-        chiefMedicalOfficer.getEducation() << " " << chiefMedicalOfficer.getExperince() << chiefMedicalOfficer.getSalary() << " " <<
+        chiefMedicalOfficer.getEducation() << " " << chiefMedicalOfficer.getExperince() << " " << chiefMedicalOfficer.getSalary() << " " <<
         chiefMedicalOfficer.getSpecialization() << " " << chiefMedicalOfficer.getBudget() << endl;
         file.close();
     }
@@ -174,7 +174,7 @@ void FileSystemManager::FileSystemManager::saveDoctors(const std::vector<Doctor>
     if (file.is_open()) {
         for (auto& doctor: doctors) {
             file << doctor.getName() << " " << doctor.getSurname() << " " << doctor.getAge() << " " <<
-            doctor.getEducation() << " " << doctor.getExperince() << doctor.getSalary() << " " <<
+            doctor.getEducation() << " " << doctor.getExperince() << " " << doctor.getSalary() << " " <<
             doctor.getSpecialization() << " " << doctor.getNumberOfCuredPeople() << endl;
         }
         file.close();
@@ -187,7 +187,7 @@ void FileSystemManager::FileSystemManager::saveDentsts(const std::vector<Dentist
     if (file.is_open()) {
         for (auto& dentist: dentists) {
             file << dentist.getName() << " " << dentist.getSurname() << " " << dentist.getAge() << " " <<
-            dentist.getEducation() << " " << dentist.getExperince() << dentist.getSalary() << endl;
+            dentist.getEducation() << " " << dentist.getExperince() << " " << dentist.getSalary() << endl;
         }
         file.close();
     }
@@ -199,7 +199,7 @@ void FileSystemManager::FileSystemManager::saveParamedics(const std::vector<Para
     if (file.is_open()) {
         for (auto& paramedic: paramedics) {
             file << paramedic.getName() << " " << paramedic.getSurname() << " " << paramedic.getAge() << " " <<
-            paramedic.getEducation() << " " << paramedic.getExperince() << paramedic.getSalary() << " " <<
+            paramedic.getEducation() << " " << paramedic.getExperince() << " " << paramedic.getSalary() << " " <<
             paramedic.getRegion() << endl;
         }
         file.close();
