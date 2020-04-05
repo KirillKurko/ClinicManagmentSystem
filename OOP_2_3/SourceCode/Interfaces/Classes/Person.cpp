@@ -7,8 +7,10 @@ extern Logger::FileLogger logger;
 Person::Person(string name, string surname, int age) {
     this->name = name;
     this->surname = surname;
-	if (age < 0) throw LessThanZero("Возраст не может быть отрицательным");
-	logger << make_pair(Logger::FileLogger::LOG_ERROR, "Возраст не может быть отрицательным");
+	if (age < 0) {
+		logger << make_pair(Logger::FileLogger::LOG_ERROR, "Возраст не может быть отрицательным");
+		throw LessThanZero("Возраст не может быть отрицательным");
+	}
     this->age = age;
 }
 
