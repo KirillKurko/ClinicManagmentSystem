@@ -17,8 +17,27 @@ namespace FileSystemManager {
     
     class FileSystemManager {
     private:
+        std::string chiefMedicalOfficerFilename;
+        std::string doctorsFilename;
+        std::string dentistsFilename;
+        std::string paramedicsFilename;
+        std::string nursesFulename;
+        std::string medicalRecorderFilename;
+        std::string patientsFilename;
         
+        std::vector<std::shared_ptr<Person>> loadPatients();
     public:
+        FileSystemManager() = default;
+        FileSystemManager(std::string chiefMedicalOfficerFilename,
+                          std::string doctorsFilename,
+                          std::string dentistsFilename,
+                          std::string paramedicsFilename,
+                          std::string nursesFulename,
+                          std::string medicalRecorderFilename,
+                          std::string patientsFilename);
+        
+        Clinic loadClinic();
+        
     };
 }
 
