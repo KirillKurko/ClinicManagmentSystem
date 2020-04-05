@@ -45,7 +45,7 @@ ChiefMedicalOfficer FileSystemManager::FileSystemManager::loadChiefMedicalOffice
         auto arguments = parseString(data);
         file.close();
         return ChiefMedicalOfficer(arguments[0], arguments[1], stoi(arguments[2]), arguments[3],
-                                                stoi(arguments[4]), stof(arguments[5]), arguments[6], stof(arguments[7]));
+                                            stoi(arguments[4]), stof(arguments[5]), arguments[6], stof(arguments[7]));
     }
     return ChiefMedicalOfficer();
 }
@@ -148,30 +148,73 @@ vector<shared_ptr<Person>> FileSystemManager::FileSystemManager::loadPatients() 
 }
 
 void FileSystemManager::FileSystemManager::saveChiefMedicalOfficer(const ChiefMedicalOfficer& chiefMedicalOfficer) {
-    
+    ofstream file;
+    file.open(chiefMedicalOfficerFilename, ios_base::out);
+    if (file.is_open()) {
+        file << chiefMedicalOfficer.getName() << " " << chiefMedicalOfficer.getSurname() << " " << chiefMedicalOfficer.getAge() << " " <<
+        chiefMedicalOfficer.getEducation() << " " << chiefMedicalOfficer.getExperince() << chiefMedicalOfficer.getSalary() << " " <<
+        chiefMedicalOfficer.getSpecialization() << " " << chiefMedicalOfficer.getBudget() << endl;
+        file.close();
+    }
 }
 
 void FileSystemManager::FileSystemManager::saveDoctors(const std::vector<Doctor> doctors) {
-    
+    ofstream file;
+    file.open(doctorsFilename, ios_base::out);
+    if (file.is_open()) {
+        for (auto& doctor: doctors) {
+            file << doctor.getName() << " " << doctor.getSurname() << " " << doctor.getAge() << " " <<
+            doctor.getEducation() << " " << doctor.getExperince() << doctor.getSalary() << " " <<
+            doctor.getSpecialization() << " " << doctor.getNumberOfCuredPeople() << endl;
+        }
+        file.close();
+    }
 }
 
 void FileSystemManager::FileSystemManager::saveDentsts(const std::vector<Dentist>& dentists) {
-    
+    ofstream file;
+    file.open(dentistsFilename, ios_base::out);
+    if (file.is_open()) {
+        for (auto& dentist: dentists) {
+            file << dentist.getName() << " " << dentist.getSurname() << " " << dentist.getAge() << " " <<
+            dentist.getEducation() << " " << dentist.getExperince() << dentist.getSalary() << endl;
+        }
+        file.close();
+    }
 }
 
 void FileSystemManager::FileSystemManager::saveParamedics(const std::vector<Paramedic>& paramedics) {
-    
+    ofstream file;
+    file.open(paramedicsFilename, ios_base::out);
+    if (file.is_open()) {
+        for (auto& paramedic: paramedics) {
+            file << paramedic.getName() << " " << paramedic.getSurname() << " " << paramedic.getAge() << " " <<
+            paramedic.getEducation() << " " << paramedic.getExperince() << paramedic.getSalary() << " " <<
+            paramedic.getRegion() << endl;
+        }
+        file.close();
+    }
 }
 
 void FileSystemManager::FileSystemManager::saveNurses(const std::vector<Nurse>& nurses) {
-    
+    ofstream file;
+    file.open(nursesFilename, ios_base::out);
+    if (file.is_open()) {
+        for (auto& nurse: nurses) {
+            file << nurse.getName() << " " << nurse.getSurname() << " " << nurse.getAge() << " " <<
+            nurse.getEducation() << " " << nurse.getExperince() << " " << nurse.getSalary() << endl;
+        }
+        file.close();
+    }
 }
 
 void FileSystemManager::FileSystemManager::saveMedicalRecorder(const MedicalRecorder& medicalRecorder) {
     ofstream file;
     file.open(medicalRecorderFilename, ios_base::out);
     if (file.is_open()) {
-        
+        file << medicalRecorder.getName() << " " << medicalRecorder.getSurname() << " " << medicalRecorder.getAge() << " " <<
+        medicalRecorder.getEducation() << " " << medicalRecorder.getExperince() << " " << medicalRecorder.getSalary() << endl;
+        file.close();
     }
 }
 
@@ -179,7 +222,7 @@ void FileSystemManager::FileSystemManager::savePatients(const vector<shared_ptr<
     ofstream file;
     file.open(patientsFilename, ios_base::out);
     if (file.is_open()) {
-        for (auto patient: patients) {
+        for (auto& patient: patients) {
             file << patient->getName() << " " << patient->getSurname() << " " << patient->getAge() << endl;
         }
         file.close();
