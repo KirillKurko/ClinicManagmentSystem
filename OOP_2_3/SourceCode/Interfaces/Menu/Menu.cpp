@@ -221,5 +221,5 @@ void task() {
 }
 
 void save() {
-    fileSystemManager.savePatients(clinic->getPatients());
+    fileSystemManager.saveClinic(*clinic);
 }

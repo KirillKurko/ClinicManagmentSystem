@@ -38,7 +38,12 @@ FileSystemManager::FileSystemManager::FileSystemManager(string chiefMedicalOffic
 }
 
 Clinic FileSystemManager::FileSystemManager::loadClinic() {
-    auto chiefMedicalOfficer = 
+    auto chiefMedicalOfficer = loadChiefMedicalOfficer();
+    auto doctors = loadDoctors();
+    auto dentists = loadDentists();
+    auto paramedics = loadParamedics();
+    auto nurses = loadNurses();
+    auto medicalRecorder = loadMedicalRecorder();
     auto patients = loadPatients();
-    return Clinic()
+    return Clinic(chiefMedicalOfficer, doctors, dentists, paramedics, nurses, medicalRecorder, patients);
 }
