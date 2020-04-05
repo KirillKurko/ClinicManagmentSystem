@@ -4,6 +4,7 @@ using namespace std;
 
 Clinic* clinic = nullptr;
 extern Logger::FileLogger logger;
+extern FileSystemManager::FileSystemManager fileSystemManager;
 
 void terminate_func() {
     string message = "Собственная функция завершения: возникло необработанное исключение";
@@ -17,7 +18,7 @@ int mainMenu() {
     set_terminate(terminate_func);
     while (true) {
         cout << "\n1 - Создать клинику\n2 - Просмотреть\n3 - Добавить\n4 - Удалить\n5 - Поиск"
-        << "\n6 - Редактирование\n7 - Задание\n8 - Выход" << endl;
+        << "\n6 - Редактирование\n7 - Задание\n8 - Сохранить\n9 - Выход" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
         logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
@@ -80,6 +81,9 @@ int mainMenu() {
                 break;
             case 7:
                 task();
+                break;
+            case 8:
+                save();
                 break;
             default:
                 string message = "Работа завершена";
@@ -214,4 +218,8 @@ void task() {
     cout << "Ответ: абсолютный обработчик используемя для перехвата исключений любых типов" << endl;
     logger << make_pair(Logger::FileLogger::LOG_INFO, "Выход из функции задания");
     return;
+}
+
+void save() {
+    fileSystemManager.savePatients(clinic->getPatients());
 }

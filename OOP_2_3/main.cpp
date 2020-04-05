@@ -5,6 +5,7 @@
 using namespace std;
 
 Logger::FileLogger logger;
+FileSystemManager::FileSystemManager fileSystemManager("", "", "", "", "", "", "patients.txt");
 
 int main() {
 	while (mainMenu()) {};

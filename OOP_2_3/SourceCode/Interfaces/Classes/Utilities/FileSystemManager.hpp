@@ -3,15 +3,15 @@
 
 #include "Clinic.hpp"
 
-ChiefMedicalOfficer chiefMedicalOfficer;
-
-std::vector<Doctor> doctors;
-std::vector<Dentist> dentists;
-std::vector<Paramedic> paramedics;
-std::vector<Nurse> nurses;
-
-MedicalRecorder medicalRecorder;
-std::vector<std::shared_ptr<Person>> patients;
+//ChiefMedicalOfficer chiefMedicalOfficer;
+//
+//std::vector<Doctor> doctors;
+//std::vector<Dentist> dentists;
+//std::vector<Paramedic> paramedics;
+//std::vector<Nurse> nurses;
+//
+//MedicalRecorder medicalRecorder;
+//std::vector<std::shared_ptr<Person>> patients;
 
 namespace FileSystemManager {
     
@@ -25,7 +25,7 @@ namespace FileSystemManager {
         std::string medicalRecorderFilename;
         std::string patientsFilename;
         
-        std::vector<std::shared_ptr<Person>> loadPatients();
+        
     public:
         FileSystemManager() = default;
         FileSystemManager(std::string chiefMedicalOfficerFilename,
@@ -37,6 +37,9 @@ namespace FileSystemManager {
                           std::string patientsFilename);
         
         Clinic loadClinic();
+        
+        std::vector<std::shared_ptr<Person>> loadPatients();
+        void savePatients(const std::vector<std::shared_ptr<Person>>& patients);
         
     };
 }

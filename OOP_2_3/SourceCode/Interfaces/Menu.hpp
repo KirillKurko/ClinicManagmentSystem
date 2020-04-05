@@ -3,6 +3,7 @@
 
 #include "CreateFunctions.hpp"
 #include "Classes/Utilities/FileLogger.hpp"
+#include "Classes/Utilities/FileSystemManager.hpp"
 
 int mainMenu();
 
@@ -34,5 +35,6 @@ void remove();
 
 void task();
 
+void save();
 
 #endif 
