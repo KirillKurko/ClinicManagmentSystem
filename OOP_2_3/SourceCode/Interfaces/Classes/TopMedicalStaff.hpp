@@ -40,7 +40,7 @@ public:
            int experience = 0, float salary = 0.0,
            std::string specialization = std::string(),
            std::vector<std::shared_ptr<Person>> patients = std::vector<std::shared_ptr<Person>>(),
-           int  numberOfCuredPeople =  0,
+           int numberOfCuredPeople =  0,
            std::vector<std::pair<Date, std::shared_ptr<Person>>> appointments = std::vector<std::pair<Date, std::shared_ptr<Person>>>());
 	Doctor(const TopMedicalStaff& other, std::vector<std::shared_ptr<Person>> patients,
 		   int numberOfCuredPeople, std::vector<std::pair<Date, std::shared_ptr<Person>>> appointments);

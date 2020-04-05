@@ -12,7 +12,7 @@ namespace FileSystemManager {
         std::string doctorsFilename;
         std::string dentistsFilename;
         std::string paramedicsFilename;
-        std::string nursesFulename;
+        std::string nursesFilename;
         std::string medicalRecorderFilename;
         std::string patientsFilename;
         
@@ -38,7 +38,7 @@ namespace FileSystemManager {
                           std::string doctorsFilename,
                           std::string dentistsFilename,
                           std::string paramedicsFilename,
-                          std::string nursesFulename,
+                          std::string nursesFilename,
                           std::string medicalRecorderFilename,
                           std::string patientsFilename);
         
