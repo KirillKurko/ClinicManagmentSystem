@@ -33,7 +33,7 @@ namespace FileSystemManager {
         void savePatients(const std::vector<std::shared_ptr<Person>>& patients);
         
     public:
-        FileSystemManager() = default;
+        FileSystemManager();
         FileSystemManager(std::string chiefMedicalOfficerFilename,
                           std::string doctorsFilename,
                           std::string dentistsFilename,

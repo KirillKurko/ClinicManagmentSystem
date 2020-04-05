@@ -2,6 +2,16 @@
 
 using namespace std;
 
+FileSystemManager::FileSystemManager::FileSystemManager() {
+    this->chiefMedicalOfficerFilename = "chiefMedicalOfficer.txt";
+    this->doctorsFilename = "doctors.txt";
+    this->dentistsFilename = "dentists.txt";
+    this->paramedicsFilename = "paramedics.txt";
+    this->nursesFilename = "nurses.txt";
+    this->medicalRecorderFilename = "medicalRecorder.txt";
+    this->patientsFilename = "patients.txt";
+}
+
 FileSystemManager::FileSystemManager::FileSystemManager(string chiefMedicalOfficerFilename,
                   string doctorsFilename, string dentistsFilename, string paramedicsFilename,
                   string nursesFilename, string medicalRecorderFilename, string patientsFilename) {
