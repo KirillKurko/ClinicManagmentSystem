@@ -1,10 +1,20 @@
 #include "FileSystemManager.hpp"
 
 using namespace std;
-//
-//vector<shared_ptr<Person>> FileSystemManager::FileSystemManager::loadPatients() {
-//
-//}
+
+vector<shared_ptr<Person>> FileSystemManager::FileSystemManager::loadPatients() {
+    vector<shared_ptr<Person>> patients;
+    ifstream file;
+    string data;
+    file.open(patientsFilename, ios_base::in);
+    while (getline(file, data)) {
+        auto arguments = parseString(data);
+        patients.push_back(make_shared<Person>(Person(arguments[0], arguments[1], stoi(arguments[2]))));
+        
+    }
+    file.close();
+    return patients;
+}
 
 void FileSystemManager::FileSystemManager::savePatients(const vector<shared_ptr<Person>>& patients) {
     ofstream file;
@@ -14,7 +24,6 @@ void FileSystemManager::FileSystemManager::savePatients(const vector<shared_ptr<
     }
     file.close();
 }
-
 
 FileSystemManager::FileSystemManager::FileSystemManager(string chiefMedicalOfficerFilename,
                   string doctorsFilename, string dentistsFilename, string paramedicsFilename,
@@ -29,5 +38,7 @@ FileSystemManager::FileSystemManager::FileSystemManager(string chiefMedicalOffic
 }
 
 Clinic FileSystemManager::FileSystemManager::loadClinic() {
-    return Clinic();
+    auto chiefMedicalOfficer = 
+    auto patients = loadPatients();
+    return Clinic()
 }

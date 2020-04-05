@@ -2,16 +2,7 @@
 #define FileSystemManager_hpp
 
 #include "Clinic.hpp"
-
-//ChiefMedicalOfficer chiefMedicalOfficer;
-//
-//std::vector<Doctor> doctors;
-//std::vector<Dentist> dentists;
-//std::vector<Paramedic> paramedics;
-//std::vector<Nurse> nurses;
-//
-//MedicalRecorder medicalRecorder;
-//std::vector<std::shared_ptr<Person>> patients;
+#include "StringParser.hpp"
 
 namespace FileSystemManager {
     
@@ -25,6 +16,21 @@ namespace FileSystemManager {
         std::string medicalRecorderFilename;
         std::string patientsFilename;
         
+        ChiefMedicalOfficer loadChiefMedicalOfficer();
+        std::vector<Doctor> loadDoctors();
+        std::vector<Dentist> loadDentists();
+        std::vector<Paramedic> loadParamedics();
+        std::vector<Nurse> loadNurses();
+        MedicalRecorder loadMedicalRecorder();
+        std::vector<std::shared_ptr<Person>> loadPatients();
+        
+        void saveChiefMedicalOfficer();
+        void saveDoctors(const std::vector<Doctor> doctors);
+        void saveDentsts(const std::vector<Dentist>& dentists);
+        void saveParamedics(const std::vector<Paramedic>& paramedics);
+        void saveNurses(const std::vector<Nurse>& nurses);
+        void saveMedicalRecorder(const MedicalRecorder& medicalRecorder);
+        void savePatients(const std::vector<std::shared_ptr<Person>>& patients);
         
     public:
         FileSystemManager() = default;
@@ -37,10 +43,7 @@ namespace FileSystemManager {
                           std::string patientsFilename);
         
         Clinic loadClinic();
-        
-        std::vector<std::shared_ptr<Person>> loadPatients();
-        void savePatients(const std::vector<std::shared_ptr<Person>>& patients);
-        
+        void saveClinic(const Clinic& clinic);
     };
 }
 
