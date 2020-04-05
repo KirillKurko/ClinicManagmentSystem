@@ -18,7 +18,7 @@ int mainMenu() {
     set_terminate(terminate_func);
     while (true) {
         cout << "\n1 - Создать клинику\n2 - Просмотреть\n3 - Добавить\n4 - Удалить\n5 - Поиск"
-        << "\n6 - Редактирование\n7 - Задание\n8 - Сохранить\n9 - Выход" << endl;
+        << "\n6 - Редактирование\n7 - Задание\n8 - Сохранить\n9 - Загрузить\n10 - Выход" << endl;
         cout << "Выберите пункт меню: ";
         selection = CorrectCin<int>();
         logger << make_pair(Logger::FileLogger::LOG_INFO, string("Выбрано значение: " + to_string(selection)));
@@ -85,6 +85,8 @@ int mainMenu() {
             case 8:
                 save();
                 break;
+            case 9:
+                load();
             default:
                 string message = "Работа завершена";
                 cout << message << endl;
@@ -222,4 +224,10 @@ void task() {
 
 void save() {
     fileSystemManager.saveClinic(*clinic);
+}
+
+void load() {
+    if (clinic != nullptr)
+        delete clinic;
+    fileSystemManager.loadClinic();
 }

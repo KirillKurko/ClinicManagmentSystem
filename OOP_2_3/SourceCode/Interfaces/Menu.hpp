@@ -36,5 +36,6 @@ void remove();
 void task();
 
 void save();
+void load();
 
 #endif 
